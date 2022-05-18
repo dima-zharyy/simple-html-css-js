@@ -3,25 +3,25 @@
 // 3) Змінити координати рандомно
 // 4) Кнопки не мають виходити за межі екрану
 // 5) Використати делегування подій
+// import { Fancybox } from "@fancyapps/ui";
+// const buttonsContainer = document.querySelector(".container");
+// buttonsContainer.addEventListener("mouseover", onHover);
 
-const buttonsContainer = document.querySelector(".container");
-buttonsContainer.addEventListener("mouseover", onHover);
+// function onHover(e) {
+//   const { target: button } = e;
+//   console.dir(button);
+//   const maxTop = window.innerHeight - button.clientHeight;
+//   const maxLeft = window.innerWidth - button.clientWidth;
+//   button.style.top = `${(Math.random() * maxTop).toFixed(0)}px`;
+//   button.style.left = `${(Math.random() * maxLeft).toFixed(0)}px`;
+// }
 
-function onHover(e) {
-  const { target: button } = e;
-  console.dir(button);
-  const maxTop = window.innerHeight - button.clientHeight;
-  const maxLeft = window.innerWidth - button.clientWidth;
-  button.style.top = `${(Math.random() * maxTop).toFixed(0)}px`;
-  button.style.left = `${(Math.random() * maxLeft).toFixed(0)}px`;
-}
-
-const main = document.querySelector("main");
-main.addEventListener("click", (e) => {
-  const { target: button } = e;
-  if (button.dataset.modal !== "modalWindow") return;
-  console.log("click");
-});
+// const main = document.querySelector("main");
+// main.addEventListener("click", (e) => {
+//   const { target: button } = e;
+//   if (button.dataset.modal !== "modalWindow") return;
+//   console.log("click");
+// });
 
 //
 //
@@ -75,6 +75,27 @@ main.addEventListener("click", (e) => {
 // 	<p>You can set the content of the lightbox with JS.</p>
 // `);
 // instance.show();
+//
+//
+//
+//
+Fancybox.bind("#gallery a", {
+  groupAll: true, // Group all items
+  on: {
+    ready: (fancybox) => {
+      console.log(`fancybox #${fancybox.id} is ready!`);
+    },
+  },
+});
+//
+//
+//
+//
+
+//
+//
+//
+//
 
 // Fancybox.bind('[data-fancybox="gallery"]', {
 //   infinite: false,
