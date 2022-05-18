@@ -1,7 +1,23 @@
 {
+  "name": "simple-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dima-zharyy/simple-html-css-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dima-zharyy/simple-html-css-js/issues"
+  },
+  "homepage": "https://github.com/dima-zharyy/simple-html-css-js#readme",
   "dependencies": {
-    "@fancyapps/ui": "^4.0.27",
-    "install": "^0.13.0",
-    "npm": "^8.10.0"
+    "@fancyapps/ui": "^4.0.27"
   }
 }

@@ -3,7 +3,7 @@
 // 3) Змінити координати рандомно
 // 4) Кнопки не мають виходити за межі екрану
 // 5) Використати делегування подій
-// import { Fancybox } from "@fancyapps/ui";
+import { Fancybox } from "./node_modules/@fancyapps/ui/src/Fancybox/Fancybox.js";
 // const buttonsContainer = document.querySelector(".container");
 // buttonsContainer.addEventListener("mouseover", onHover);
 
@@ -78,7 +78,7 @@
 //
 //
 //
-//
+
 Fancybox.bind("#gallery a", {
   groupAll: true, // Group all items
   on: {
